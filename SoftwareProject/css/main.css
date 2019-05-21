@@ -1,0 +1,24 @@
+nav {
+    background-color: cornflowerblue;
+}
+
+nav li a {
+    color: darkblue;
+}
+
+#container {
+    background-color: paleturquoise;
+    height: 630px;
+}
+
+footer {
+    background-color: cornflowerblue;
+    text-align: center;
+    padding-top: 15px;
+    height: 50px;
+}
+
+#slideshow img {
+    width: 1556px;
+    height: 350px;
+}
