@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Smartphone Shop</title>
+        <title>Contact US</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <script type="text/javascript" src="js/index.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -35,16 +35,31 @@
 
     <body onload="slideshow()">
         <div id="container">
-            <div id="slideshow"> 
-                <img src="img/samsungBanner.JPG"> 
-                <img src="img/iphoneBanner.png" > 
-                <img src="img/huaweiBanner.jpg" > 
-            </div> 
-            
-            <div id="lap-banner">
-                <img src="img/web-banner-laptops-.jpg" width="1520px" height="250px"> 
+            <div style="text-align:center">
+                <br>
+                <form action="mailto:Malcolm.Cuschieri.a101065@mcast.edu.mt?subject=Contact Form" method="post" enctype="text/plain">        
+                    <label>Name</label>
+                    <br>
+                    <input name="name" placeholder="Type Here">
+                    <br>
+                    <label>Surname</label>
+                    <br>
+                    <input name="surname" placeholder="Type Here">
+                    <br>
+                    <label>E-mail</label>
+                    <br>
+                    <input name="email" type="text" placeholder="Type Here">
+                    <br>
+                    <label>Comment</label>
+                    <br>
+                    <textarea name="comment" placeholder="Type Here"></textarea>
+                    <br>
+                    <input id="submit" name="submit" type="submit" value="Submit">
+                    <input id="reset" name="reset" type="reset" value="Reset">
+                </form>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9009.399632251449!2d14.426253820051796!3d35.90695283536013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smt!4v1558435477125!5m2!1sen!2smt" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-
         </div>
 
     </body>

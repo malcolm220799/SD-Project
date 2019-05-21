@@ -11,31 +11,35 @@
     <body>
 
         <div class="jumbotron text-center">
-            <h4 class="display-4">Add a book here!</h4>
+            <h4 class="display-4">Add a product here!</h4>
             <p>Please fill in the below form...</p>
         </div>
 
         <div class="container">            
-            <form method="post" action="addbooks.php" enctype="multipart/form-data"> 
+            <form method="post" action="addproducts.php" enctype="multipart/form-data"> 
                 <div class="form-group">
-                    <label for="publisher">Publisher</label>
-                    <input class="form-control" type="text" name="publisher" required>
-                </div>
-                <div class="form-group">
-                    <label for="author">Author</label>
-                    <input class="form-control" type="text" name="author" required>
-                </div>
-                <div class="form-group">
-                    <label for="bookname">Book Name</label>
-                    <input class="form-control" type="text" name="bookname" required>
+                    <label for="productName">Product Name</label>
+                    <input class="form-control" type="text" name="productName" required>
                 </div>
                 <div class="form-group">
                     <label for="price">Price</label>
                     <input class="form-control" type="text" name="price" required>
                 </div>
                 <div class="form-group">
-                    <label for="category">Category</label>
-                    <input class="form-control" type="text" name="category" required>
+                    <label for="categoryId">Category Id</label>
+                    <select name="categoryId">
+                        <option value="1">Laptop</option>
+                        <option value="2">Smartphone</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="brandId">Brand Id</label>
+                    <select name="brandId">
+                        <option value="1">Samsung</option>
+                        <option value="2">Apple</option>
+                        <option value="3">Acer</option>
+                        <option value="4">MSI</option>
+                    </select>
                 </div>
                 <div class="mt-3 custom-file">
                     <input type="file" class="custom-file-input" name="img" id="img">
@@ -43,7 +47,7 @@
                 </div>
                 <div class="form-group row justify-content-between">
                     <input type="submit" class="btn btn-success" name="success" />
-                    <a class="btn btn-secondary" href="getbooks.php">Back</a>
+                    <a class="btn btn-secondary" href="index.php">Back</a>
                     <input type="reset" class="btn btn-danger" />
                 </div>
             </form>
@@ -59,11 +63,10 @@
                 else 
                 {
                     //populate the variables
-                    $publisher = $_POST['publisher'];  
-                    $author = $_POST['author'];  
-                    $bookname = $_POST['bookname'];  
-                    $price = $_POST['price'];
-                    $category = $_POST['category'];
+                    $productName = $_POST['productName'];  
+                    $price = $_POST['price'];  
+                    $categoryId = $_POST['categoryId']; 
+                    $brandId = $_POST['brandId'];
                     $tmpfile = $_FILES['img']['tmp_name'];  //physical file
                     $filename = 'img/'.$_FILES['img']['name'];
 
@@ -71,7 +74,7 @@
 
 
                         //prepare the query
-                        $query = "INSERT INTO tbl_books (author, title, price, publisher, category, img) VALUES ('$author', '$bookname', '$price', '$publisher', '$category', '$filename')";
+                        $query = "INSERT INTO tbl_products (productName, price, categoryId, brandId, img) VALUES ('$productName', '$price', '$categoryId', '$brandId', '$filename')";
 
                         //run query
                         $result = mysqli_query($conn, $query);
