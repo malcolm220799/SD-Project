@@ -23,7 +23,7 @@ session_start();
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input class="form-control" type="text" name="password" placeholder="Please enter password here..." required>
+                        <input class="form-control" type="password" name="password" placeholder="Please enter password here..." required>
                     </div>                    
                     <div class="form-group text-center">
                         <button type="submit" class="btn btn-primary" name="submit">Login</button>

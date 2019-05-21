@@ -13,15 +13,15 @@
     <nav class="navColor">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#" >Mobile Shop</a>
+                <a class="navbar-brand" href="index.php" >Mobile Shop</a>
             </div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="getlaptops.php" >Laptops</a></li>
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Smartphones<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="getproductsSamsung.php">Samsung</a></li>
-                        <li><a href="#">Apple</a></li>
-                        <li><a href="#">Huawei</a></li>
+                        <li><a href="getproductsApple.php">Apple</a></li>
+                        <li><a href="getproductsHuawei.php">Huawei</a></li>
                     </ul>
                 </li>
                 <li><a href="contactUs.php">Contact Us</a></li>

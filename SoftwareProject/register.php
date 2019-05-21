@@ -23,7 +23,7 @@
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input class="form-control" type="text" name="password" placeholder="Please enter password here..." required>
+                        <input class="form-control" type="password" name="password" placeholder="Please enter password here..." required>
                     </div>
                     <div class="form-group text-center">
                         <button type="submit" class="btn btn-primary" name="submit">Register</button>
@@ -54,7 +54,7 @@
         //email sever credentials and email composition
         $mail->Username = 'softwareprojectshop@gmail.com';                           //username
         $mail->Password = 'MCAST1234';                                   //password
-        $mail->setFrom("softwareprojectshop@gmail.com", "swd42a@gmail.com");      //who is sending the email
+        $mail->setFrom("softwareprojectshop@gmail.com", "softwareprojectshop@gmail.com");      //who is sending the email
         $mail->addAddress($email);                                      //the email of the user
         $mail->Subject = "Registration Info";                           //subject
         $mail->Body = "test";                                           //body
