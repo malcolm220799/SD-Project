@@ -46,22 +46,20 @@
     </nav>
 
     <body onload="slideshow()">
-        <div id="container">
 
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-            <div id="slideshow"> 
-                <img src="img/samsungBanner.JPG"> 
-                <img src="img/iphoneBanner.png" > 
-                <img src="img/huaweiBanner.jpg" > 
-            </div> 
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-            <div id="lap-banner">
-                <img src="img/web-banner-laptops-.jpg" width="1520px" height="250px"> 
-            </div>
+        <div id="slideshow"> 
+            <img src="img/iphonebanner.jpg"> 
+            <img src="img/huaweiBanner.jpg">
+            <img src="img/samsungBanner.jpg"> 
+        </div> 
 
+        <div id="lap-banner">
+            <br>
+            <img src="img/web-banner-laptops-.jpg" width="1520px" height="250px"> 
         </div>
-
     </body>
 
     <footer>
