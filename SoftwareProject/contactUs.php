@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact US</title>
+        <title>About US</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <script type="text/javascript" src="js/index.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -13,7 +13,7 @@
     <nav class="navColor">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.php" >Mobile Shop</a>
+                <a class="navbar-brand" href="index.php" >Maltech</a>
             </div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="getlaptops.php" >Laptops</a></li>
@@ -24,6 +24,7 @@
                         <li><a href="getproductsHuawei.php">Huawei</a></li>
                     </ul>
                 </li>
+                <li><a href="aboutUs.php">About Us</a></li>
                 <li><a href="contactUs.php">Contact Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

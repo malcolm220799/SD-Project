@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Smartphone Shop</title>
+        <title>About US</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/topbtn.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -34,18 +35,48 @@
         </div>
     </nav>
 
-    <body onload="slideshow()">
+    <body>
         <div id="container">
-            <div id="slideshow"> 
-                <img src="img/samsungBanner.JPG"> 
-                <img src="img/iphoneBanner.png" > 
-                <img src="img/huaweiBanner.jpg" > 
-            </div> 
-            
-            <div id="lap-banner">
-                <img src="img/web-banner-laptops-.jpg" width="1520px" height="250px"> 
-            </div>
+            <div id="about" style="margin-left: 10px">
+                
+                <h1>About Us</h1>
+                
+                <script>
+                    /*FAQ Slider*/
+                    $(document).ready(function(){
+                        $('li.q').click(function(){
+                            $(this).next().slideToggle()
+                            ('li.a').slideUp()
+                        });
+                    });			
+                </script>
 
+                <p>Maltech is located in Mosta. We offer clients with laptops and smartphones below are the brands that we offer:</p>
+
+                <img src="img/samsung-apple-huawei.png" id="brands" class="img-rounded">
+                
+                <br>
+                <br>
+                
+                <h3>FAQ</h3>
+                <br/>
+                
+                <ul class="faq">
+                    <li class="q">Do you offer delivery?
+                    </li>
+                    <p class="a">Yes it is free of charge</p>
+
+                    <li class="q"> How can I pay for my order?
+                    </li>
+                    <p class="a">Through online banking like paypal</p>
+
+                    <li class="q"> Do I need to register and set up an account to shop?
+                    </li>
+                    <p class="a">Yes so we can know where to deliver the product</p>
+                </ul>
+
+                <button onclick="topFunction()" id="topBtn" title="Go to top">Back To Top</button>
+            </div>
         </div>
 
     </body>
