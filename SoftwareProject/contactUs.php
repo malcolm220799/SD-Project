@@ -9,7 +9,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script src="https://malsup.github.com/jquery.cycle.all.js"></script>
     </head>
-
+    
     <nav class="navColor">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -28,6 +28,8 @@
                 <li><a href="contactUs.php">Contact Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <a href="https://www.facebook.com/Maltech-439707916762965/?modal=admin_todo_tour" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/Maltech4" class="fa fa-twitter"></a>
                 <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>

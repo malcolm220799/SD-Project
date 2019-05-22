@@ -55,6 +55,7 @@ session_start();
             <div class="form-group row justify-content-between">
                 <a class="btn btn-primary" href="addproducts.php">Add</a>
                 <a class="btn btn-secondary" href="index.php">Back</a>
+                <a class="btn btn-danger" href="removeproducts.php">Delete</a>
             </div>
         </div>
     </body>

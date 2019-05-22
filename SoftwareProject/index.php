@@ -8,7 +8,16 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script src="https://malsup.github.com/jquery.cycle.all.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
+
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
 
     <nav class="navColor">
         <div class="container-fluid">
@@ -28,6 +37,8 @@
                 <li><a href="contactUs.php">Contact Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <a href="https://www.facebook.com/Maltech-439707916762965/?modal=admin_todo_tour" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/Maltech4" class="fa fa-twitter"></a>
                 <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
@@ -36,12 +47,15 @@
 
     <body onload="slideshow()">
         <div id="container">
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
             <div id="slideshow"> 
                 <img src="img/samsungBanner.JPG"> 
                 <img src="img/iphoneBanner.png" > 
                 <img src="img/huaweiBanner.jpg" > 
             </div> 
-            
+
             <div id="lap-banner">
                 <img src="img/web-banner-laptops-.jpg" width="1520px" height="250px"> 
             </div>
